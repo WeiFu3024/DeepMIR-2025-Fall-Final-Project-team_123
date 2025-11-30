@@ -1,0 +1,14 @@
+all_in_one_results
+bgm_drums
+demix
+RapBank
+NATTEN
+spec
+
+*.wav
+*.mp3
+
+# Ignore temporary files
+*.tmp
+*.log
+__pycache__/
