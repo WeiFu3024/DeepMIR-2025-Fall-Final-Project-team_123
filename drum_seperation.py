@@ -24,8 +24,8 @@ def separate_drums(input_file, output_dir):
 
 if __name__ == "__main__":
 
-    target_dir = "RapBank/data/bgm"
-    output_dir = "bgm_drums"
+    target_dir = "RapBank/data/bgm_cut"
+    output_dir = "bgm_cut_drums"
 
     target_files = get_filelist(target_dir, ".wav")
     for i, file_name in enumerate(target_files):

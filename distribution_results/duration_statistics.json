@@ -1,0 +1,38 @@
+{
+  "total_files": 65974,
+  "mean_duration": 16.968222936308244,
+  "median_duration": 17.87,
+  "std_duration": 7.028178452808607,
+  "min_duration": 3.0,
+  "max_duration": 75.16,
+  "categories": {
+    "0-5s": {
+      "count": 5372,
+      "percentage": 8.14
+    },
+    "5-10s": {
+      "count": 7068,
+      "percentage": 10.71
+    },
+    "10-15s": {
+      "count": 10392,
+      "percentage": 15.75
+    },
+    "15-20s": {
+      "count": 18880,
+      "percentage": 28.62
+    },
+    "20-25s": {
+      "count": 16566,
+      "percentage": 25.11
+    },
+    "25-30s": {
+      "count": 7112,
+      "percentage": 10.78
+    },
+    "30s+": {
+      "count": 584,
+      "percentage": 0.89
+    }
+  }
+}

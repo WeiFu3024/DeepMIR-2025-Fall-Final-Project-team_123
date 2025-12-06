@@ -1,8 +1,11 @@
 all_in_one_results
+all_in_one_results_bgm_cut
 bgm_drums
+bgm_cut_drums
 demix
 RapBank
 NATTEN
+preprocessed
 spec
 
 *.wav
