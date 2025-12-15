@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FOLDER1="all_in_one_results_bgm_cut"
+FOLDER1="preprocessed/distilhubert/data"
 FOLDER2="RapBank/data/vocal_cut"
 
 start_time=$(date +%s)

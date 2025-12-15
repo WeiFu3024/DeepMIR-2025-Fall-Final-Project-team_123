@@ -46,8 +46,15 @@ if __name__ == "__main__":
     for file in tqdm(filelist):
         json_file = os.path.join(output_dir, os.path.basename(file).replace('.wav', '.json'))
         if os.path.exists(json_file):
-            print(f"Skipping {file}, already processed.")
-            continue  # Skip already processed files
+            # verify if the file has been processed, by checking whether the json file contains valid data
+            try:
+                with open(json_file, 'r') as f:
+                    data = f.read()
+                if len(data) > 0:
+                    print(f"Skipping {file}, already processed.")
+                    continue  # Skip already processed files
+            except:
+                pass  # If there's an error reading the file, proceed to reprocess it
         try:
             result = allin1.analyze(file, out_dir=output_dir)
             fig = allin1.visualize(result, out_dir=output_viz_dir)
